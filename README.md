@@ -11,7 +11,7 @@ Muitas pessoas gostam de assistir filmes, hoje em dia tem cada vez mais se popul
 -   [ ] Usuário pode inserir novos filmes com os seguintes campos: tipo, categoria, ano, produtora, diretor e atores
 -   [ ] Usuário pode ver uma lista de filmes
 -   [ ] Usuário pode filtrar a lista filmes por uma pesquisa
--   [ ] Usuário pode ordenar a lista filmes
+-   [ ] Usuário pode ordenar a lista filmes pelos seguintes campos: tipo, categoria, ano, produtora e diretor
 -   [ ] Usuário pode inserir uma avaliação para cada filme.
 
 ## Pessoas envolvidas
