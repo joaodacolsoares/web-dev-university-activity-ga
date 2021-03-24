@@ -10,9 +10,19 @@ Muitas pessoas gostam de assistir filmes, hoje em dia tem cada vez mais se popul
 
 -   [ ] Usuário pode inserir novos filmes com os seguintes campos: tipo, categoria, ano, produtora, diretor e atores
 -   [ ] Usuário pode ver uma lista de filmes
--   [ ] Usuário pode filtrar a lista filmes por uma pesquisa
--   [ ] Usuário pode ordenar a lista filmes pelos seguintes campos: tipo, categoria, ano, produtora e diretor
+-   [ ] Usuário pode filtrar a lista de filmes por uma pesquisa
+-   [ ] Usuário pode ordenar a lista de filmes pelos seguintes campos: tipo, categoria, ano, produtora e diretor
 -   [ ] Usuário pode inserir uma avaliação para cada filme.
+
+## Design do app
+
+Aqui estão as telas que prototipamos no Figma
+
+### Mobile
+![Abacate](./assets/mobile.png)
+
+### Desktop
+![Abacate](./assets/desktop.png)
 
 ## Pessoas envolvidas
 
