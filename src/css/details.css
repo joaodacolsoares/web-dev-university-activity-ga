@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.header img {
+  margin-right: 1rem;
+  transform: rotate(180deg);
+  height: 24px;
+}
+
+@media screen and (max-width: 720px) {
+  .header img {
+    height: 16px;
+  }
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 5px;
+  background: #fff;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.box .header {
+  margin-bottom: 0.3rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.box input {
+  border: 1px solid #666;
+}

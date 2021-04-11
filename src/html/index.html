@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/global.css">
-    <script src="../script/ListItem.js"></script>
+    <script src="../script/ListItem.js"></script>    
   </head>
 
   <body>
@@ -18,10 +18,10 @@
       <button class="add-button">Adicionar</button>
     </div>
     <div class="filter-container">
-      <input type="text" placeholder="Procure por algum filme...">
+      <input class="text-input" type="text" placeholder="Procure por algum filme..." oninput="onFilterChange(this.value)">
       <div class="show-desktop">
-        <button class="sort-button">
-          sort icon
+        <button class="sort-button" onclick="onSortButtonClick()">
+          <img src="../assets/sort.png" alt="Ordenar"/>
         </button>
       </div>
     </div>
@@ -35,10 +35,9 @@
         <div>Diretor</div>
         <div class="arrow-container"></div>
       </div>
-      <list-item name='abacate' />
-      <list-item />
-      <list-item />
+      <div id="items"></div>
     </div>
   </body>
+  <script src="../script/index.js"></script>
 
 </html>

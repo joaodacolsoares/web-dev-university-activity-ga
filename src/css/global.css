@@ -33,8 +33,13 @@ body {
 h1 {
   font-weight: 600;
   font-size: 40px;
-  line-height: 48px;
   color: #000000;
+}
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 20px;
+  }
 }
 
 .add-button {
@@ -54,7 +59,7 @@ h1 {
   justify-content: space-between;
 }
 
-.filter-container > input {
+.text-input {
   padding: 1.2rem;
   background: #FFFFFF;
   color: #000000;
@@ -63,19 +68,23 @@ h1 {
   border-radius: 5px;
 }
 
-.filter-container > input::placeholder {
+.text-input::placeholder {
   color: #666;
 }
 
-.filter-container > div > button {
+.filter-container .sort-button {
   width: 50px;
   height: 50px;
   background: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.filter-container .sort-button > img {
+  height: 18px;
 }
 
 .list-container {
@@ -91,8 +100,7 @@ h1 {
   align-items: center;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 14px;
   color: #666666;
   opacity: 0.5;
   padding: 1rem 1.5rem;
@@ -111,6 +119,7 @@ h1 {
   box-sizing: border-box;
   margin-bottom: 0.3rem;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .list-container .header > div:not(:last-child) {
@@ -135,6 +144,11 @@ h1 {
   width: 100%;
   flex: 2;
   text-align: left;
+}
+
+.list-container .list-item > div:first-child > .name {
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .arrow-container {
