@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  border: none;
+}
+
+body {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  background: #F2F3F5;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    padding: 1rem 1rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .hide-md {
+    display: none !important;
+  }
+}
+
+.horizontal-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.add-button {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  padding: 0.8rem 1rem;
+  background-color: #6548A4;
+  border-radius: 5px;
+}
+
+.filter-container {
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-container > input {
+  padding: 1.2rem;
+  background: #FFFFFF;
+  color: #000000;
+  flex: 1;
+  margin-right: 1.5rem;
+  border-radius: 5px;
+}
+
+.filter-container > input::placeholder {
+  color: #666;
+}
+
+.filter-container > div > button {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.list-container .header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666666;
+  opacity: 0.5;
+  padding: 1rem 1.5rem;
+  box-sizing: border-box;
+}
+
+.list-container .list-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  padding: 1rem 1.5rem;  
+  box-sizing: border-box;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+
+.list-container .header > div:not(:last-child) {
+  width: 100%;
+  flex: 1;
+  text-align: center;
+}
+
+.list-container .list-item > div:not(:last-child)  {
+  width: 100%;
+  flex: 1;
+  text-align: center;
+}
+
+.list-container .header > div:first-child {
+  width: 100%;
+  flex: 2;
+  text-align: left;
+}
+
+.list-container .list-item > div:first-child {
+  width: 100%;
+  flex: 2;
+  text-align: left;
+}
+
+.arrow-container {
+  flex-grow: initial;
+  width: 16px !important;
+  height: 16px;
+}
+
+.arrow-container > img {
+  width: 16px !important;
+  height: 16px;
+}

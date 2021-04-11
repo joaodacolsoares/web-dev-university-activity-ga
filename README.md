@@ -19,10 +19,10 @@ Muitas pessoas gostam de assistir filmes, hoje em dia tem cada vez mais se popul
 Aqui estão as telas que prototipamos no Figma
 
 ### Mobile
-![Abacate](./assets/mobile.png)
+![Abacate](./src/assets/mobile.png)
 
 ### Desktop
-![Abacate](./assets/desktop.png)
+![Abacate](./src/assets/desktop.png)
 
 ## Pessoas envolvidas
 

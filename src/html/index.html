@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de filmes</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <script src="../script/ListItem.js"></script>
+  </head>
+
+  <body>
+    <div class="horizontal-container">
+      <h1>Filmes</h1>
+      <button class="add-button">Adicionar</button>
+    </div>
+    <div class="filter-container">
+      <input type="text" placeholder="Procure por algum filme...">
+      <div class="show-desktop">
+        <button class="sort-button">
+          sort icon
+        </button>
+      </div>
+    </div>
+    <div class="list-container">
+      <div class="header hide-md">
+        <div></div>
+        <div >Tipo</div>
+        <div>Categoria</div>
+        <div>Ano</div>
+        <div>Produtora</div>
+        <div>Diretor</div>
+        <div class="arrow-container"></div>
+      </div>
+      <list-item name='abacate' />
+      <list-item />
+      <list-item />
+    </div>
+  </body>
+
+</html>
