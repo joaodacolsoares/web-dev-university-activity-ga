@@ -16,10 +16,12 @@
   <body>
     <div class="horizontal-container">
       <h1>Filmes</h1>
-      <button class="highlight-button">Adicionar</button>
+      <a href="./create.html">
+        <button class="highlight-button">Adicionar</button>
+      </a>
     </div>
     <div class="filter-container">
-      <input class="text-input" type="text" placeholder="Procure por algum filme..." oninput="onFilterChange(this.value)">
+      <input class="text-input margin-right" type="text" placeholder="Procure por algum filme..." oninput="onFilterChange(this.value)">
       <div class="show-desktop">
         <button class="sort-button" onclick="onSortButtonClick()">
           <img src="../assets/sort.png" alt="Ordenar"/>

@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catálogo de filmes</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/create.css">
 </head>
+
 <body>
-  
+  <div class="header">
+    <a href="./index.html">
+      <img src="../assets/right-arrow.png"/>
+    </a>
+    <h1>Adicionar um filme</h1>
+  </div>
+  <form action="/action_page.php">
+    <div class="input-container max-size">
+      <label for="input-film-name">Nome do filme</label>
+      <input id='input-film-name' type="text" class="text-input" placeholder="Nome do filme">
+    </div>
+    <div class="input-container">
+      <label for="input-film-category">Categoria do filme</label>
+      <input id='input-film-category' type="text" class="text-input" placeholder="Categoria do filme">
+    </div>
+    <div class="input-container max-size">
+      <label for="input-film-type">Tipo do filme</label>
+      <input id='input-film-type' type="text" class="text-input" placeholder="Tipo do filme">
+    </div>
+    <div class="input-container max-size">
+      <label for="input-film-producer">Nome da produtora</label>
+      <input id='input-film-producer' type="text" class="text-input" placeholder="Nome da produtora">
+    </div>
+    <div class="input-container">
+      <label for="input-film-director">Nome do Diretor(a)</label>
+      <input id='input-film-director' type="text" class="text-input" placeholder="Nome do Diretor(a)">
+    </div>
+  </form>
+  <button type="button" class="highlight-button">Adicionar Filme</button>
 </body>
+
 </html>
