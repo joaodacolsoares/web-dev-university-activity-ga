@@ -50,6 +50,7 @@ h1 {
   padding: 0.8rem 1rem;
   background-color: #6548A4;
   border-radius: 5px;
+  align-self: stretch;
 }
 
 .filter-container {
@@ -60,6 +61,7 @@ h1 {
 }
 
 .text-input {
+  width: 100%;
   padding: 1.2rem;
   background: #FFFFFF;
   color: #000000;
