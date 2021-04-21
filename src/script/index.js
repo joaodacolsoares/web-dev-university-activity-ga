@@ -2,7 +2,7 @@ const list = document.getElementById('items');
 let items = [];
 let isSorted = false;
 for (let i = 5; i > 0; i--) {
-  const listItem = new ListItem(`${i}Exterminador do futuro`, '5.0', 'Longa metragem', 'Ação', '1984', 'Canal+', 'James Cameron');
+  const listItem = new ListItem(`${i}Exterminador do futuro`, '⭐ 5.0', 'Longa metragem', 'Ação', '1984', 'Canal+', 'James Cameron');
   listItem.addEventListener('click', () => onListItemClick(i));
   items.push(listItem);
   list.appendChild(listItem);
