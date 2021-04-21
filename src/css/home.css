@@ -1,0 +1,96 @@
+.filter-container {
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-container .sort-button {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.filter-container .sort-button > img {
+  height: 18px;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.list-container .header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666666;
+  opacity: 0.5;
+  padding: 1rem 1.5rem;
+  box-sizing: border-box;
+}
+
+.list-container .list-item {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  padding: 1rem 1.5rem;  
+  box-sizing: border-box;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.list-container .header > div:not(:last-child) {
+  width: 100%;
+  flex: 1;
+  text-align: center;
+}
+
+.list-container .list-item > div:not(:last-child)  {
+  width: 100%;
+  flex: 1;
+  text-align: center;
+}
+
+.list-container .header > div:first-child {
+  width: 100%;
+  flex: 2;
+  text-align: left;
+}
+
+.list-container .list-item > div:first-child {
+  width: 100%;
+  flex: 2;
+  text-align: left;
+}
+
+.list-container .list-item > div:first-child > .name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.arrow-container {
+  flex-grow: initial;
+  width: 16px !important;
+  height: 16px;
+}
+
+.arrow-container > img {
+  width: 16px !important;
+  height: 16px;
+}
