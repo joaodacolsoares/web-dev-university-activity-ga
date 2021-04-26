@@ -28,3 +28,4 @@ Aqui estão as telas que prototipamos no Figma
 
 -   [Developer] João Dacol Soares
 -   [Developer] Nicolas Grisa Prokopetz
+-   [Developer] Felipe Ricardi
