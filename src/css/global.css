@@ -82,6 +82,15 @@ h1 {
   border-radius: 5px;
 }
 
+.text-input.disable {
+  cursor: not-allowed;
+  background: #cacaca;
+}
+
+.text-input.error {
+  border: 1px solid red;
+}
+
 .text-input.margin-right {
   margin-right: 1.5rem;
 }
