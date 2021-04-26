@@ -1,13 +1,27 @@
 const list = document.getElementById('items');
-let items = [];
 let isSorted = false;
-for (let i = 5; i > 0; i--) {
-  const listItem = new ListItem(`${i}Exterminador do futuro`, '⭐ 5.0', 'Longa metragem', 'Ação', '1984', 'Canal+', 'James Cameron');
-  listItem.addEventListener('click', () => onListItemClick(i));
-  items.push(listItem);
-  list.appendChild(listItem);
-}
-let filteredItems = [...items];
+let items = [];
+let filteredItems = [];
+
+getAllMovies().then(({ movies }) => {
+  movies.forEach(({ id, name, reviewAverage, category, type, year, producer, director }) => {
+    const listItem = new ListItem(
+      name, 
+      `⭐ ${reviewAverage || 'Não avaliado'}`, 
+      type, 
+      category, 
+      year, 
+      producer, 
+      director);
+    listItem.addEventListener('click', () => onListItemClick(id));
+    items.push(listItem);
+    list.appendChild(listItem);
+  })
+
+  filteredItems = [...items];
+})
+
+
 
 
 const onListItemClick = (name) => {
