@@ -1,67 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/global.css">
-  <link rel="stylesheet" href="../css/details.css">
-  <title>Detalhes</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/details.css">
+    <script src="../script/api-connection/api.js"></script>
+    <title>Detalhes</title>
+  </head>
 
-<body>
-  <div class="header">
-    <a href="./index.html">
-      <img src="../assets/right-arrow.png"/>
-    </a>
-    <h1>Exterminador do futuro</h1>
-  </div>
-  <div>
+  <body>
+    <div class="header">
+      <a href="./index.html">
+        <img src="../assets/right-arrow.png" />
+      </a>
+      <h1>Exterminador do futuro</h1>
+    </div>
     <div>
-      <div class="boxes">
-        <div class="box">
-          <div class="header">Avaliação</div>
-          <div>Loading...</div>
-        </div>
-        <div class="box">
-          <div class="header">Tipo</div>
-          <div>Loading...</div>
-        </div>
-        <div class="box">
-          <div class="header">Categoria</div>
-          <div>Loading...</div>
-        </div>
-        <div class="box">
-          <div class="header">Ano</div>
-          <div>Loading...</div>
-        </div>
-        <div class="box">
-          <div class="header">Produtora</div>
-          <div>Loading...</div>
-        </div>
-        <div class="box">
-          <div class="header">Diretor</div>
-          <div>Loading...</div>
+      <div>
+        <div class="boxes">
+          <div class="box">
+            <div class="header">Avaliação</div>
+            <div id="reviewAverage-text-container">Loading...</div>
+          </div>
+          <div class="box">
+            <div class="header">Tipo</div>
+            <div id="type-text-container">Loading...</div>
+          </div>
+          <div class="box">
+            <div class="header">Categoria</div>
+            <div id="category-text-container">Loading...</div>
+          </div>
+          <div class="box">
+            <div class="header">Ano</div>
+            <div id="year-text-container">Loading...</div>
+          </div>
+          <div class="box">
+            <div class="header">Produtora</div>
+            <div id="producer-text-container">Loading...</div>
+          </div>
+          <div class="box">
+            <div class="header">Diretor</div>
+            <div id="director-text-container">Loading...</div>
+          </div>
         </div>
       </div>
-      <div id="items"></div>
+      <div>
+      </div>
+      <div class="box">
+        <div class="header">Atores</div>
+        <div id="cast-text-container">Loading...</div>
+      </div>
+      <div class="box">
+        <div class="header">Sua avaliação</div>
+        <div class="horizontal-container">
+          <input id='review-input' class="text-input margin-right" placeholder="Sua avaliação..." />
+          <button onclick="reviewMovie(event)" class="highlight-button">Avaliar</button>
+        </div>
+      </div>
     </div>
-    <div>
-  </div>
-  <div class="box">
-    <div class="header">Atores</div>
-    <div>Arnold Schwarzenegger, Linda Hamilton, Michael Biehn, Arnold Schwarzenegger, Linda Hamilton, Michael Biehn, Arnold Schwarzenegger, Linda Hamilton, Michael Biehn, Arnold Schwarzenegger, Linda Hamilton, Michael Biehn</div>
-  </div>
-  <div class="box">
-    <div class="header">Sua avaliação</div>
-    <div class="horizontal-container">
-      <input class="text-input margin-right" placeholder="Sua avaliação..."/>
-      <button class="highlight-button">Avaliar</button>
-    </div>
-  </div>
-  </div>
 
-</body>
+  </body>
+  <script src="../script/details.js"></script>
 
 </html>
